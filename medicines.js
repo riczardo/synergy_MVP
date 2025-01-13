@@ -3,194 +3,194 @@
 const MEDICINES_DATABASE = {
     // Cardiovascular Medications
     "Warfarin": {
-        category: "Anticoagulant",
-        type: "Prescription",
+        category: "Lek przeciwzakrzepowy",
+        type: "Bez recepty",
         conflicts: ["Aspirin", "Ibuprofen", "Naproxen", "Diclofenac", "Clopidogrel", "Amoxicillin", "Ciprofloxacin", "Clarithromycin", "Sertraline", "Escitalopram"]
     },
     "Metoprolol": {
-        category: "Beta Blocker",
-        type: "Prescription",
+        category: "Beta bloker",
+        type: "Bez recepty",
         conflicts: ["Amlodipine", "Finasteride", "Salbutamol", "Pseudoephedrine"]
     },
     "Ramipril": {
-        category: "ACE Inhibitor",
-        type: "Prescription",
+        category: "Inhibitor ACE",
+        type: "Bez recepty",
         conflicts: ["Spironolactone", "Valsartan", "Allopurinol", "Pseudoephedrine"]
     },
     "Atorvastatin": {
-        category: "Statin",
-        type: "Prescription",
+        category: "Statyna",
+        type: "Bez recepty",
         conflicts: ["Clarithromycin", "Azithromycin", "Omeprazole", "Pantoprazole"]
     },
     "Amlodipine": {
-        category: "Calcium Channel Blocker",
-        type: "Prescription",
+        category: "Bloker kanału wapniowego",
+        type: "Bez recepty",
         conflicts: ["Metoprolol", "Bisoprolol", "Clarithromycin", "Azithromycin"]
     },
     "Bisoprolol": {
-        category: "Beta Blocker",
-        type: "Prescription",
+        category: "Beta bloker",
+        type: "Bez recepty",
         conflicts: ["Amlodipine", "Salbutamol", "Pseudoephedrine"]
     },
     "Valsartan": {
-        category: "ARB",
-        type: "Prescription",
+        category: "Antagonista receptora angiotensyny",
+        type: "Bez recepty",
         conflicts: ["Ramipril", "Spironolactone", "Allopurinol"]
     },
     "Clopidogrel": {
-        category: "Antiplatelet",
-        type: "Prescription",
+        category: "Lek przeciwpłytkowy",
+        type: "Bez recepty",
         conflicts: ["Warfarin", "Aspirin", "Omeprazole", "Pantoprazole"]
     },
     "Furosemide": {
-        category: "Diuretic",
-        type: "Prescription",
+        category: "Lek moczopędny",
+        type: "Bez recepty",
         conflicts: ["Spironolactone", "Metformin", "Digoxin"]
     },
     "Spironolactone": {
-        category: "Diuretic",
-        type: "Prescription",
+        category: "Lek moczopędny",
+        type: "Bez recepty",
         conflicts: ["Ramipril", "Valsartan", "Furosemide", "Metformin"]
     },
 
     // Pain/Anti-inflammatory Medications
     "Aspirin": {
-        category: "NSAID",
-        type: "OTC",
+        category: "Niesteroidowy lek przeciwzapalny",
+        type: "Bez recepty",
         conflicts: ["Warfarin", "Clopidogrel", "Ibuprofen", "Naproxen", "Diclofenac"]
     },
     "Ibuprofen": {
-        category: "NSAID",
-        type: "OTC",
+        category: "Niesteroidowy lek przeciwzapalny",
+        type: "Bez recepty",
         conflicts: ["Warfarin", "Aspirin", "Naproxen", "Diclofenac", "Sertraline", "Escitalopram"]
     },
     "Paracetamol": {
-        category: "Analgesic",
-        type: "OTC",
+        category: "Lek przeciwbólowy",
+        type: "Bez recepty",
         conflicts: []  // Relatively safe with most medications
     },
     "Diclofenac": {
-        category: "NSAID",
-        type: "Prescription",
+        category: "Niesteroidowy lek przeciwzapalny",
+        type: "Bez recepty",
         conflicts: ["Warfarin", "Aspirin", "Ibuprofen", "Naproxen", "Sertraline", "Escitalopram"]
     },
     "Naproxen": {
-        category: "NSAID",
-        type: "Prescription",
+        category: "Niesteroidowy lek przeciwzapalny",
+        type: "Bez recepty",
         conflicts: ["Warfarin", "Aspirin", "Ibuprofen", "Diclofenac", "Sertraline", "Escitalopram"]
     },
 
     // Antibiotics
     "Amoxicillin": {
-        category: "Antibiotic",
-        type: "Prescription",
+        category: "Antybiotyk",
+        type: "Bez recepty",
         conflicts: ["Warfarin", "Allopurinol", "Methotrexate"]
     },
     "Ciprofloxacin": {
-        category: "Antibiotic",
-        type: "Prescription",
+        category: "Antybiotyk",
+        type: "Bez recepty",
         conflicts: ["Warfarin", "Methotrexate", "Ondansetron", "Insulin"]
     },
     "Clarithromycin": {
-        category: "Antibiotic",
-        type: "Prescription",
+        category: "Antybiotyk",
+        type: "Bez recepty",
         conflicts: ["Warfarin", "Atorvastatin", "Amlodipine", "Quetiapine"]
     },
     "Doxycycline": {
-        category: "Antibiotic",
-        type: "Prescription",
+        category: "Antybiotyk",
+        type: "Bez recepty",
         conflicts: ["Warfarin", "Metformin", "Insulin"]
     },
     "Azithromycin": {
-        category: "Antibiotic",
-        type: "Prescription",
+        category: "Antybiotyk",
+        type: "Bez recepty",
         conflicts: ["Atorvastatin", "Amlodipine", "Quetiapine"]
     },
 
     // Additional Cardiovascular Medications
     "Digoxin": {
-        category: "Cardiac Glycoside",
-        type: "Prescription",
+        category: "Glikozyd nasercowy",
+        type: "Bez recepty",
         conflicts: ["Furosemide", "Amiodarone", "Verapamil"]
     },
     "Amiodarone": {
-        category: "Antiarrhythmic",
-        type: "Prescription",
+        category: "Lek przeciwarytmiczny",
+        type: "Bez recepty",
         conflicts: ["Digoxin", "Warfarin", "Quetiapine"]
     },
     "Diltiazem": {
-        category: "Calcium Channel Blocker",
-        type: "Prescription",
+        category: "Bloker kanału wapniowego",
+        type: "Bez recepty",
         conflicts: ["Metoprolol", "Bisoprolol", "Atorvastatin"]
     },
     "Losartan": {
-        category: "ARB",
-        type: "Prescription",
+        category: "Antagonista receptora angiotensyny",
+        type: "Bez recepty",
         conflicts: ["Ramipril", "Spironolactone", "Allopurinol"]
     },
 
     // Additional Psychiatric Medications
     "Fluoxetine": {
-        category: "Antidepressant",
-        type: "Prescription",
+        category: "Lek przeciwdepresyjny",
+        type: "Bez recepty",
         conflicts: ["Warfarin", "Aspirin", "Tramadol"]
     },
     "Venlafaxine": {
-        category: "Antidepressant",
-        type: "Prescription",
+        category: "Lek przeciwdepresyjny",
+        type: "Bez recepty",
         conflicts: ["Aspirin", "Ibuprofen", "Tramadol"]
     },
     "Risperidone": {
-        category: "Antipsychotic",
-        type: "Prescription",
+        category: "Lek przeciwpsychotyczny",
+        type: "Bez recepty",
         conflicts: ["Carbamazepine", "Fluoxetine", "Paroxetine"]
     },
 
     // Additional Pain Medications
     "Tramadol": {
-        category: "Opioid Analgesic",
-        type: "Prescription",
+        category: "Opioidowy lek przeciwbólowy",
+        type: "Bez recepty",
         conflicts: ["Fluoxetine", "Sertraline", "Amitriptyline"]
     },
     "Codeine": {
-        category: "Opioid Analgesic",
-        type: "Prescription",
+        category: "Opioidowy lek przeciwbólowy",
+        type: "Bez recepty",
         conflicts: ["Fluoxetine", "Paroxetine", "Bupropion"]
     },
 
     // Additional Gastrointestinal Medications
     "Domperidone": {
-        category: "Antiemetic",
-        type: "Prescription",
+        category: "Lek przeciwwymiotny",
+        type: "Bez recepty",
         conflicts: ["Amiodarone", "Clarithromycin", "Fluconazole"]
     },
     "Esomeprazole": {
-        category: "PPI",
-        type: "Prescription",
+        category: "Inhibitor pompy protonowej",
+        type: "Bez recepty",
         conflicts: ["Clopidogrel", "Iron supplements", "Digoxin"]
     },
 
     // Additional Respiratory Medications
     "Formoterol": {
-        category: "Long-acting Beta Agonist",
-        type: "Prescription",
+        category: "Długo działający agonista receptorów beta",
+        type: "Bez recepty",
         conflicts: ["Metoprolol", "Bisoprolol", "Propranolol"]
     },
     "Ipratropium": {
-        category: "Anticholinergic",
-        type: "Prescription",
+        category: "Lek antycholinergiczny",
+        type: "Bez recepty",
         conflicts: ["Tiotropium", "Glycopyrronium"]
     },
 
     // Additional Antibiotics
     "Trimethoprim": {
-        category: "Antibiotic",
-        type: "Prescription",
+        category: "Antybiotyk",
+        type: "Bez recepty",
         conflicts: ["Spironolactone", "Methotrexate", "Warfarin"]
     },
     "Flucloxacillin": {
-        category: "Antibiotic",
-        type: "Prescription",
+        category: "Antybiotyk",
+        type: "Bez recepty",
         conflicts: ["Warfarin", "Methotrexate"]
     }
 };
